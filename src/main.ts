@@ -10,7 +10,10 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import vuetify from './plugins/vuetify';
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import '@mdi/font/css/materialdesignicons.css'
+//import 'vuetify/dist/vuetify.min.css'
+import Vuetify from 'vuetify'
 
+//Vue.use(Vuetify);
 firebase.initializeApp({
   apiKey: "AIzaSyC1nTBCI7DzlEy_MLG7nETQBJtcmvazSRs",
   authDomain: "bloodbanck-452b3.firebaseapp.com",
@@ -30,6 +33,7 @@ Vue.config.productionTip = false;
 new Vue({
   router,
   store,
+  
   vuetify,
   render: (h) => h(App)
 }).$mount('#app');
