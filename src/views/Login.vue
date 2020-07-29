@@ -1,7 +1,8 @@
 <template>
    <div class="login-form">
     <form v-on:submit.prevent="login" v-if="show">
-        <h2 class="text-center">iniciar sesion</h2>       
+        
+        <h2 class="text-center">Iniciar sesion</h2>       
         <div class="form-group">
              <input type="email" v-model="user.email" class="form-control" placeholder="correo" required="required">
         </div>
@@ -12,6 +13,7 @@
             <button type="submit"  class="btn btn-primary btn-block">iniciar sesion</button>
         </div>
         <div class="clearfix">
+            
             <label class="pull-left checkbox-inline"></label><br/>
             <a href="/forgotpassword" class="pull-right">olvidaste tu contraseña?</a>
         </div>   
@@ -23,15 +25,21 @@
     </form>
     <p class="text-center"><a href="/register">crear una cuenta</a></p>
       
-            <a href="/homeaviso" class="text-center">Aviso de Privacidad</a>
+    <br/>
+    <br/>
+    <br/>  
+            
         
 </div>
 </template>
 
 <script>
+ var contador =0;
 import axios from 'axios';
 export default {
+   
     data(){
+        
         return{
             user:{
                 email:'',
@@ -42,7 +50,9 @@ export default {
             show:true,
         }
     },
+    
     methods:{
+        
         login:function() {
             axios.post(this.url+"user/login",this.user)
             .then(response=>{
@@ -79,9 +89,12 @@ export default {
                   
             })
             .catch(error=>{
-                var err=error.response.status+" "+error.response.statusText;
-                this.fileLogsError(name,err);
-                alert("error credenciales incorrectas")
+                console.log("este es el user "+this.user.email);
+                var err = error.response.status+" "+error.response.statusText;
+                this.fileLogsError(this.user.email,err);
+                this.contadorError();
+                //cthis.fileLogsError(name);onsole.log(err);
+                alert("Error credenciales incorrectas"+ " intento" +contador+" de 3");
             });
 
         },
@@ -99,21 +112,28 @@ export default {
             
         },
 
-        fileLogsError:function(name){
+        fileLogsError:function(email, err ){
             var log={
-                user:name,
-                movimiento:'no full login ',
-                status:'ok 200 login',
+                user:email,
+                movimiento:err,
+                status:'contraseña incorrecta',
             }
             axios.post(this.url+"user/logs",log)
-            
             .then(response=>{
-                console.log("rol es "+err);
+                console.log("<<<<<<<<<<<<<<   entro")
             })
             .catch(error=>{
-                console.log("rol es "+err);
+                console.log("<<<<<<<<<<<<<<   sin exito ")
             });
             
+        },
+        contadorError(){
+            contador+=1;
+            console.log(contador);
+            if (contador==3){
+                this.$router.push("/Error404");
+                console.log("mandar a otro lado ");
+            }
         },
         // fileLogsError:function(name,err) {
         //     var log={
@@ -152,6 +172,7 @@ export default {
             }).catch(error=>{
             })
         }
+
        
     },
     

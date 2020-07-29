@@ -30,7 +30,7 @@ Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false;
 
-new Vue({
+const app =new Vue({
   router,
   store,
   

@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
+import Error404 from '../views/Error404.vue';
 import HomeAviso from '../views/HomeAviso.vue';
 import login from '../views/Login.vue';
 import register from  '../views/Register.vue';
@@ -25,6 +26,7 @@ Vue.use(VueRouter);
 const routes = [
    {path: '/home',name: 'home',component: Home,}
    ,{path: '/homeaviso',name: 'homeaviso',component: HomeAviso,}
+   ,{path: '/Error404',name: 'Error404',component: Error404,}
   ,{path:'/login',name:'login',component:login}
   ,{path:'/register',name:'register',component:register}
   ,{path:'/registert',name:'registert',component:registert}

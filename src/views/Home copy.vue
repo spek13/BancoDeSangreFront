@@ -1,7 +1,7 @@
 
 <template>
   <div class="form-group col-sm-12">
-    <label>dcarga de imagenes </label>
+    <label>Adjunte la copia de la cédula de conyuge en formato PDF</label>
     <input
       type="file"
       ref="images"

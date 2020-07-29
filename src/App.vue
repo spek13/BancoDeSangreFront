@@ -1,7 +1,7 @@
 <template>
 <v-app>
     <div> 
-      <v-app-bar color="deep-purple accent-4" dense dark >
+      <v-app-bar color="grey darken-4" dense dark >
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
         <v-toolbar-title>Banco de sangre</v-toolbar-title>
           <v-spacer> </v-spacer>
@@ -35,7 +35,16 @@
       <content>
         <router-view/>
       </content>
+        <v-footer padless>
+    <v-col
+      class="text-center"
+      cols="12"
+    >
+      {{ new Date().getFullYear() }} — <strong>BoodBanck</strong> —<a href="/homeaviso" class="text-center"> Aviso de Privacidad</a>
+    </v-col>
+  </v-footer>
 </v-app>
+
 
 </template>
 

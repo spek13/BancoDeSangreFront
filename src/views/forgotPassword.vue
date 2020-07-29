@@ -1,18 +1,28 @@
 <template>
 <div class="login-form">
     <form v-on:submit.prevent="sendEmail">
-        <h2 class="text-center">enviarme un correo</h2>             
+        <h2 class="text-center">Enviarme un correo</h2>             
         <div class="form-group">
             <input type="email" v-model="email" class="form-control" placeholder="direcion del correo electronico"
             pattern=".+@[Gg][Mm][Aa][iI][lL][.][cC][oO][mM]" required="required">
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block">enviar correo</button>
+            <button type="submit" class="btn btn-primary btn-block">Enviar correo</button>
         </div>
         <div class="clearfix">
             <a href="/login" class="pull-right">regresar</a>
         </div>    
+        
     </form> 
+    <br/>
+    <br/>
+    <br/>  
+    <br/>
+    <br/>
+    <br/> 
+    <br/>
+    <br/>
+    <br/>   
 </div>
     
 </template>

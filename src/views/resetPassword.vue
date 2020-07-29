@@ -79,8 +79,10 @@ export default {
             }
             axios.post(this.url+"user/logs",log)
             .then(response=>{
+                console.log(log)
             })
             .catch(error=>{
+                console.log(log)
             });
             
         },
@@ -92,8 +94,10 @@ export default {
             }
             axios.post(this.url+"user/logs",log)
             .then(response=>{
+                console.log(log)
             })
             .catch(error=>{
+                console.log(log)
             });
             
         }
