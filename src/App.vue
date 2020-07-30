@@ -35,6 +35,9 @@
       <content>
         <router-view/>
       </content>
+
+
+      
         <v-footer padless>
     <v-col
       class="text-center"

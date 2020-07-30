@@ -33,7 +33,7 @@ export default {
     data(){
         return{
             email:'',
-            url:'https://enigmatic-beyond-17045.herokuapp.com/api/v1/',    
+            url:'http://127.0.0.1:3333/api/v1/',    
         }
     },
     methods:{
