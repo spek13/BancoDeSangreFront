@@ -2,12 +2,12 @@
   <div class="row">
   <div class="col-sm-2 admin-sidebar">
     <div class="nav flex-column nav-pills text-center text-uppercase admin-nav" id="sidebar-admin" role="tablist" aria-orientation="vertical">
-        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="http://localhost:8080/panel" role="tab" aria-controls="admin-requests" aria-selected="false">ver publicaciones</a>
-        <a class="nav-link admin-nav-item admin-sidebar-item"  data-toggle="pill" href="http://localhost:8080/panel/master" v-if="rol=='2'" role="tab" aria-controls="admin-userss" aria-selected="false">donadores</a>
-        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="http://localhost:8080/panel/cuestionario" v-if="rol=='1' " role="tab" aria-controls="admin-analytics" aria-selected="false">generar una cita</a>
-        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="http://localhost:8080/panel/historialcitas" v-if="rol=='1'" role="tab" aria-controls="admin-messages" aria-selected="false">historial de citas</a>
-        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill" href="http://localhost:8080/panel/ultimacita"  v-if="rol=='1'" role="tab" aria-controls="admin-sessions" aria-selected="false">ultima cita</a>
-        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="http://localhost:8080/panel/perfil" role="tab" aria-controls="admin-sessions" aria-selected="false">perfil</a>
+        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="https://bloodbanck-452b3.web.app//panel" role="tab" aria-controls="admin-requests" aria-selected="false">ver publicaciones</a>
+        <a class="nav-link admin-nav-item admin-sidebar-item"  data-toggle="pill" href="https://bloodbanck-452b3.web.app//panel/master" v-if="rol=='2'" role="tab" aria-controls="admin-userss" aria-selected="false">donadores</a>
+        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="https://bloodbanck-452b3.web.app//panel/cuestionario" v-if="rol=='1' " role="tab" aria-controls="admin-analytics" aria-selected="false">generar una cita</a>
+        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="https://bloodbanck-452b3.web.app//panel/historialcitas" v-if="rol=='1'" role="tab" aria-controls="admin-messages" aria-selected="false">historial de citas</a>
+        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill" href="https://bloodbanck-452b3.web.app//panel/ultimacita"  v-if="rol=='1'" role="tab" aria-controls="admin-sessions" aria-selected="false">ultima cita</a>
+        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="https://bloodbanck-452b3.web.app//panel/perfil" role="tab" aria-controls="admin-sessions" aria-selected="false">perfil</a>
     </div>
 </div>
 
@@ -69,7 +69,7 @@ export default {
             userDataLogin:[],
             token:'',
             rol:'',
-            url:'http://127.0.0.1:3333/api/v1/',
+            url:'https://enigmatic-beyond-17045.herokuapp.com/api/v1/',
 
         }   
     },

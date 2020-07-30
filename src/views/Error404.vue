@@ -25,7 +25,7 @@
                     </div>
                     <h4>Oops! This page Could Not Be Found!</h4>
                     <p>Sorry bit the page you are looking for does not exist, have been removed or name changed.</p>
-                    <a href="http://localhost:8080/login" class="btn btn-primary btn-round">Go to homepage</a>
+                    <a href="https://bloodbanck-452b3.web.app//forgotpassword" class="btn btn-primary btn-round">Forgotpassword</a>
                 </div>
             </div>
         </div>

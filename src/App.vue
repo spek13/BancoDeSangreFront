@@ -40,7 +40,7 @@
       class="text-center"
       cols="12"
     >
-      {{ new Date().getFullYear() }} — <strong>BoodBanck</strong> —<a href="/homeaviso" class="text-center"> Aviso de Privacidad</a>
+      {{ new Date().getFullYear() }} — <strong>BloodBank</strong> —<a href="/homeaviso" class="text-center"> Aviso de Privacidad</a>
     </v-col>
   </v-footer>
 </v-app>
