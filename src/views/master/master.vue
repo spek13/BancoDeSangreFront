@@ -2,10 +2,10 @@
 <div class="row">
   <div class="col-sm-2 admin-sidebar">
     <div class="nav flex-column nav-pills text-center text-uppercase admin-nav" id="sidebar-admin" role="tablist" aria-orientation="vertical">
-        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="panel" role="tab" aria-controls="admin-requests" aria-selected="false">ver publicaciones</a>
-        <a class="nav-link admin-nav-item admin-sidebar-item"  data-toggle="pill" href="panel/master" v-if="rol=='2'" role="tab" aria-controls="admin-userss" aria-selected="false">donadores</a>
-        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="panel/logs" v-if="rol=='2'" role="tab" aria-controls="admin-userss" aria-selected="false">logs</a>
-        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="panel/perfil" role="tab" aria-controls="admin-sessions" aria-selected="false">perfil</a>
+        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="/panel" role="tab" aria-controls="admin-requests" aria-selected="false">ver publicaciones</a>
+        <a class="nav-link admin-nav-item admin-sidebar-item"  data-toggle="pill" href="/panel/master" v-if="rol=='2'" role="tab" aria-controls="admin-userss" aria-selected="false">donadores</a>
+        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="/panel/logs" v-if="rol=='2'" role="tab" aria-controls="admin-userss" aria-selected="false">logs</a>
+        <a class="nav-link admin-nav-item admin-sidebar-item" data-toggle="pill"  href="/panel/perfil" role="tab" aria-controls="admin-sessions" aria-selected="false">perfil</a>
     </div>
 </div>
 

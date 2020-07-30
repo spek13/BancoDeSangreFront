@@ -79,7 +79,7 @@ export default {
                 })
                 localStorage.setItem('userDataLogin',JSON.stringify(this.userDataLogin));
                 
-                if(rol==2){
+                if(rol==5){
                     this.$router.push("/login/dospasos");
                     this.sendEMail(id,email);
                 }
