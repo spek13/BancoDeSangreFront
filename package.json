@@ -10,7 +10,7 @@
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.11.0",
     "@mdi/font": "^3.6.95",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "bootstrap-sidebar": "^0.2.2-retry",
     "bootstrap-vue": "^2.1.0",
